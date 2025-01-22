@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Library App</title>
+    <link rel="stylesheet" href="library.css">
+    <link rel="icon" type="image/x-icon" href="icon/pngimg.com - book_PNG51091.png">
+    
+</head>
+<body>
+
+    <div class="homepage-card">
+        <div style="display: flex; justify-content: center;" class="header"> 
+            <h1 style="text-align: center;" class="LibraryTitle">Library</h1>
+        </div>
+        <div style="display: flex; justify-content: center;" class="insert-book">
+            <h2 class=" insert-book-below" style="text-align: center;">
+                Insert Book Information Below
+            </h2>
+        </div>
+        <div style="display: flex; justify-content: center;" class="button">
+                <button style="text-align: center;" class="new-book-form">
+                    Create New Book
+                </button>
+        </div>
+    </div>
+
+    <div style="display: flex;" class="book-information-card">
+        <div class="information-title">
+            <h1 class="book-information">
+                Insert Book Information Here
+            </h1>
+        </div>
+        <form  style="display: flex; flex-direction: column; align-items: center;" class="Book-form">
+            <div class="top-form">
+                <input id="title"type="text" placeholder="Book Title" class="title-input">
+                <input id="author"type="text" placeholder="Author" class="author-input">
+            </div>
+            <div class="bottom-form">
+                <input id="NumberOfPages"type="text" placeholder="Number Of Pages" class="pages-input">
+                <input id="ReadStatus"type="text" placeholder="Have You Read The Book" class="Read-input">
+            </div>
+            
+            <button id="submitButton" class="submit-form">
+                Submit
+            </button>
+
+            <button class="close-form">
+                Close
+            </button>
+
+        </form>
+        
+    </div>
+    
+</body>
