@@ -71,6 +71,17 @@ function addBookCard(title, author, numPages){
     numOfPages.textContent = 'pages: ' + numPages;
     bookCard.appendChild(numOfPages);
     numOfPages.classList.add('bookCardPages');
+
+    let switchClass = document.createElement('label');
+    switchClass.classList.add('switch');
+    let checkBox = document.createElement('input type=checkbox')
+    bookCard.appendChild(switchClass);
+    switchClass.appendChild(checkBox);
+
+    let slider = document.createElement('span');
+    switchClass.appendChild(slider);
+    slider.classList.add('slider-round');
+
 }
 
 buttonElement.addEventListener("click", function(){
