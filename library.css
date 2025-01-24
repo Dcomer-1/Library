@@ -108,8 +108,11 @@ html{
 }
 .submit-form:hover, .close-form:hover{
     cursor: pointer;
+    opacity: .9;
 }
-
+.submit-form:active, .close-form:active{
+    opacity: .7;
+}
 
 .close-form{
     
@@ -126,6 +129,7 @@ html{
 
 .bookCard{
     text-align: center;
+    align-items: center;
     border: 2px solid black; 
     width: 400px;
     border-radius: 10px;
@@ -144,9 +148,56 @@ html{
     display: flex; 
     margin: auto;
 }
+.bookCardAuthor{
+    margin: 0;
+    font-weight: 500;
+}
 .bookCardTitle{
-    margin-bottom: 0;
+    font-size: 25px;
+    margin: 0;
+    margin-top: 10px;
 }
 .bookCardPages{
     margin-top: 0;
+    margin-bottom: 5px;
+}
+.read-status-btn{
+    border: 1px solid black;
+    margin-bottom: 10px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+}
+.read-status-btn.read{
+    background-color: rgb(43, 148, 43);
+}
+.read-status-btn.notread{
+    background-color: rgb(226, 64, 64);
+}
+.read-status-btn.read:hover,.remove-book-btn:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+.read-status-btn.read:hover,.read-status-btn.notread:hover{
+    cursor: pointer;
+    opacity: .9;
+}
+.remove-book-btn{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    margin-bottom: 10px;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.read-status-btn:hover{
+    cursor: pointer;
 }
